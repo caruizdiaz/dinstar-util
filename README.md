@@ -51,3 +51,8 @@ Installation and configuration
 <pre>
     select * from port;
 </pre>
+
+7. If you want to contanstaly check for updates, you can put the script in a crontab to run every 5 minutes or so.
+<pre>
+    */5 * * * * perl /root/dinstar-util/dinstar-ports-parser.pl 192.168.111.99 admin admin 8
+</pre>
