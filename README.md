@@ -29,7 +29,7 @@ Installation and configuration
     # mysql 
     mysql> create database dinstar;
 
-    # mysql dinstar < sql/dinstar.sql
+    # mysql dinstar &#60; sql/dinstar.sql
 </pre>
 3. Edit db.pm file with your database credentials
 <pre>
@@ -41,7 +41,7 @@ Installation and configuration
 4. Test the script execution
 <pre>
     Usage:
-        dinstar-ports-parser.pl <ip> <user> <password> <number-of-ports>
+        dinstar-ports-parser.pl &#60;ip&#62; &#60;user&#62; &#60;password&#62; &#60;number-of-ports&#62;
 
     # perl dinstar-ports-parser.pl 192.168.111.99 admin admin 8
 </pre>
