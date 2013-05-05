@@ -86,3 +86,6 @@ Nagios installation
 
 I don't want to get into much detail on Nagios configuration since there are plenty of material out there to setup plugins.
 If you are willing to use these scripts I'm pretty sure you alrealy know how to use and configure Nagios ;)
+
+If everything were setup correctly, you should be able to see something like this
+![ScreenShot](http://caruizdiaz.com/wp-content/uploads/2013/05/Screenshot.png)
