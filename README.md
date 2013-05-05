@@ -18,7 +18,7 @@ Dependencies
 
 1. perl
 2. curl
-3. crontab (optional)
+3. crond (optional)
 
 Installation and configuration
 =================
