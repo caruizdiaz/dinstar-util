@@ -61,9 +61,10 @@ Nagios installation
 =================
 
 1. Put the scripts in the plugins directory
-2. Setup the new commands in the command.cfg file using the parameters you want
-   Example:
+2. Setup the new commands in the command.cfg file using the parameters you want.   
 <pre>
+Example:
+
     define command{
         command_name    check-dinstar-limit
         command_line    $USER1$/check-dinstar-limit -h$HOSTADDRESS$ -w30 -c15
