@@ -18,3 +18,36 @@ Dependencies
 
 1. perl
 2. curl
+3. crontab (optional)
+
+Installation and configuration
+=================
+
+1. Clone the repository 
+2. setup the database connection
+<pre>
+    # mysql 
+    mysql> create database dinstar;
+
+    # mysql dinstar < sql/dinstar.sql
+</pre>
+3. Edit db.pm file with your database credentials
+<pre>
+    use constant DB         => 'dinstar';
+    use constant USER       => 'root';
+    use constant PWD        => '';
+    use constant HOST       => 'localhost';
+</pre>
+4. Test the script execution
+<pre>
+    Usage:
+        dinstar-ports-parser.pl <ip> <user> <password> <number-of-ports>
+
+    # perl dinstar-ports-parser.pl 192.168.111.99 admin admin 8
+</pre>
+
+6. Get to your database client and check if the rows were inserted properly
+
+<pre>
+    select * from port;
+</pre>
