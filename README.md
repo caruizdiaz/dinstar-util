@@ -49,6 +49,19 @@ Installation and configuration
 6. Get to your database client and check if the rows were inserted properly
 <pre>
     select * from port;
+
++---------------+------+------+-----------------+-------------------+----------+---------------------+--------+------+------+------+---------------------+
+| ip            | port | type | imsi            | status            | limit    | carrier             | signal | asr  | acd  | pdd  | last_update         |
++---------------+------+------+-----------------+-------------------+----------+---------------------+--------+------+------+------+---------------------+
+| 192.168.2.104 |    7 | GSM  | 744051200052261 | Mobile Registered | No Limit | Personal            | 4      |   80 |    0 |    0 | 2013-04-07 11:22:13 |
+| 192.168.2.104 |    6 | GSM  | 744051200052266 | Mobile Registered | No Limit | Personal            | 4      |   80 |    0 |    0 | 2013-04-07 11:22:13 |
+| 192.168.2.104 |    5 | GSM  | 744040010366020 | Mobile Registered | No Limit | Telecel Paraguay    | 3      |   54 |  207 |    6 | 2013-04-07 11:22:13 |
+| 192.168.2.104 |    4 | GSM  | 744020008182383 | Mobile Registered | No Limit | Hutchison Paraguay  | 4      |   90 |    0 |    0 | 2013-04-07 11:22:13 |
+| 192.168.2.104 |    3 | GSM  |                 | No SIM Card       | No Limit |                     | 0      |    0 |    0 |    0 | 2013-04-07 11:22:13 |
+| 192.168.2.104 |    2 | GSM  |                 | No SIM Card       | No Limit |                     | 0      |    0 |    0 |    0 | 2013-04-07 11:22:13 |
+| 192.168.2.104 |    1 | GSM  |                 | No SIM Card       | No Limit |                     | 0      |    0 |    0 |    0 | 2013-04-07 11:22:13 |
+| 192.168.2.104 |    0 | GSM  |                 | No SIM Card       | No Limit |                     | 0      |    0 |    0 |    0 | 2013-04-07 11:22:13 |
+
 </pre>
 
 7. If you want to contanstaly check for updates, you can put the script in a crontab to run every 5 minutes or so.
