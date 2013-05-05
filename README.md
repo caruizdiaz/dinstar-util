@@ -49,20 +49,8 @@ Installation and configuration
 6. Get to your database client and check if the rows were inserted properly
 <pre>
     select * from port;
-
-+---------------+------+------+-----------------+-------------------+----------+---------------------+--------+------+------+------+
-| ip            | port | type | imsi            | status            | limit    | carrier             | signal | asr  | acd  | pdd  |
-+---------------+------+------+-----------------+-------------------+----------+---------------------+--------+------+------+------+
-| 192.168.2.104 |    7 | GSM  | 744051200052261 | Mobile Registered | No Limit | Personal            | 4      |   80 |    0 |    0 |
-| 192.168.2.104 |    6 | GSM  | 744051200052266 | Mobile Registered | No Limit | Personal            | 4      |   80 |    0 |    0 |
-| 192.168.2.104 |    5 | GSM  | 744040010366020 | Mobile Registered | No Limit | Telecel Paraguay    | 3      |   54 |  207 |    6 |
-| 192.168.2.104 |    4 | GSM  | 744020008182383 | Mobile Registered | No Limit | Hutchison Paraguay  | 4      |   90 |    0 |    0 |
-| 192.168.2.104 |    3 | GSM  |                 | No SIM Card       | No Limit |                     | 0      |    0 |    0 |    0 |
-| 192.168.2.104 |    2 | GSM  |                 | No SIM Card       | No Limit |                     | 0      |    0 |    0 |    0 |
-| 192.168.2.104 |    1 | GSM  |                 | No SIM Card       | No Limit |                     | 0      |    0 |    0 |    0 |
-| 192.168.2.104 |    0 | GSM  |                 | No SIM Card       | No Limit |                     | 0      |    0 |    0 |    0 |
-
 </pre>
+![ScreenShot](http://caruizdiaz.com/wp-content/uploads/2013/05/rows.png)
 
 7. If you want to constantly check for updates, you can put the script in a crontab to run every 5 minutes or so.
 <pre>
@@ -87,5 +75,4 @@ Nagios installation
 I don't want to get into much detail on Nagios configuration since there are plenty of material out there to setup plugins.
 If you are willing to use these scripts I'm pretty sure you alrealy know how to use and configure Nagios ;)
 
-If everything were setup correctly, you should be able to see something like this
 ![ScreenShot](http://caruizdiaz.com/wp-content/uploads/2013/05/Screenshot.png)
