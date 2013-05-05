@@ -47,7 +47,6 @@ Installation and configuration
 </pre>
 
 6. Get to your database client and check if the rows were inserted properly
-
 <pre>
     select * from port;
 </pre>
@@ -56,3 +55,21 @@ Installation and configuration
 <pre>
     */5 * * * * perl /root/dinstar-util/dinstar-ports-parser.pl 192.168.111.99 admin admin 8
 </pre>
+
+Nagios installation
+=================
+
+1. Put the scripts in the plugins directory
+2. Setup the new commands in the command.cfg file using the parameters you want
+   Example:
+<pre>
+    define command{
+        command_name    check-dinstar-limit
+        command_line    $USER1$/check-dinstar-limit -h$HOSTADDRESS$ -w30 -c15
+        }
+</pre>
+3. Setup a new checking in your service.cfg file
+4. Restart nagios
+
+I don't want to get into much detail on Nagios configuration since there are plenty of material out there to setup plugins.
+If you are willing to use these scripts I'm pretty sure you alrealy know how to use and configure Nagios ;)
